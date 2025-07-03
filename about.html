@@ -2,117 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mahesh Lal Maskey, Ph.D. in Hydrological Sciences</title>
+  <title>About Me | Mahesh Maskey</title>
   <style>
-    body{
+    body {
       background: linear-gradient(135deg, #2288bb 0%, #116699 100%);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center center;
+      min-height: 100vh;
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       color: #fff;
     }
     .navbar {
       background: #22334a;
-      padding: 10px 40px;
+      padding: 12px 32px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      gap: 28px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     .navbar .title {
       font-weight: bold;
       font-size: 1.3em;
       color: #fff;
       letter-spacing: 1px;
+      margin-right: 24px;
+    }
+    .navbar nav {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 12px;
+      flex: 1;
     }
     .navbar nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 18px;
-      padding: 7px 10px;
+      margin: 0 6px;
+      padding: 7px 14px;
       border-radius: 4px;
       transition: background 0.2s;
       font-weight: 500;
+      display: inline-block;
     }
     .navbar nav a.active,
     .navbar nav a:hover {
       background: #ffcc00;
       color: #22334a;
     }
-    .container {
-      background: rgba(255,255,255,0.10);
-      max-width: 650px;
-      margin: 30px auto;
+    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      max-width: 1050px;
+      margin: 56px auto 0 auto;
+      padding: 0 16px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: rgba(34, 51, 74, 0.90);
+      border-radius: 14px;
       padding: 32px;
-      border-radius: 15px;
-      box-shadow: 0 2px 12px rgba(34,51,74,0.10);
+      box-shadow: 0 2px 12px rgba(34,51,74,0.12);
+      min-width: 260px;
+      max-width: 520px;
+      flex: 1 1 320px;
+      margin-bottom: 30px;
+    }
+    .card.contact {
+      max-width: 280px;
+      background: rgba(34, 51, 74, 0.80);
     }
     h2 {
       color: #ffd700;
       margin-top: 0;
-      letter-spacing: 1px;
+      font-size: 1.6em;
     }
-  .profile-photo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 2px 12px rgba(34,51,74,0.14);
-    display: block;
-    margin-bottom: 18px;
-}
+    @media (max-width: 900px) {
+      .main-content {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .card, .card.contact {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="navbar">
     <div class="title">Mahesh Maskey</div>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Me</a>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="blogs.html">Personal Blogs</a>
+      <a href="people.html">People</a>
       <a href="research.html">Research Area</a>
       <a href="teaching.html">Teaching</a>
       <a href="publications.html">Publications</a>
       <a href="affiliations.html">Affiliation</a>
-      <a href="blogs.html">Personal Blogs</a>
-      <a href="people,html">People</a>
       <a href="contact.html">Contact</a>
     </nav>
-
-  <div class="container">
-    <h2>Biography</h2>
-    <p>
-      <!-- Add your bio and CV here -->
-      Computational Hydrologist and Researcher with a passion for water sustainability and innovation.
-    </p>
   </div>
-
-  <div class="container">
-    <h2>Contact</h2>
-    <h2>Contact</h2>
-    <p>Mailing Address: 1509 Deering Street, Cleveland, Mississippi, 38732</p>
-    <p>
-      Cell Phone: <a href="" style="color:#ffd700;">(530) 220-5562</a>
-    </p>
-      Email: <a href="mailto:mmaskey@formerstudents.ucdavis.edu" style="color:#ffd700;">mmaskey@formerstudents.ucdavis.edu</a>
-    </p>
-    <p>
-      Google Scholar: <a href="https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en" style="color:#ffd700;">https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en</a>
-    </p> 
-    <p>
-      Research Gate: <a href="https://www.researchgate.net/profile/Mahesh_Maskey?ev=hdr_xprfu" style="color:#ffd700;">www.researchgate.net/profile/Mahesh_Maskey</a>
-     <p>
-      ORCID: <a href="https://orcid.org/0000-0002-2258-2932" style="color:#ffd700;">0000-0002-2258-2932</a>
-     </p>
-    <p>
-      Scopus: <a href="https://www.scopus.com/authid/detail.uri?authorId=56538356100" style="color:#ffd700;">56538356100</a>
-    </p>
-    <p>
-      LinkedIn: <a href="www.linkedin.com/in/mahesh-lal-m-9975b8360" style="color:#ffd700;">www.linkedin.com/in/mahesh-lal-m-9975b8360</a>
-    </p> 
+  <div class="main-content">
+    <div class="card">
+      <h2>Biography</h2>
+      <p>
+        Computational Hydrologist and Researcher with a passion for water sustainability and innovation.
+      </p>
+    </div>
+    <div class="card contact">
+      <h2>Contact</h2>
+        <p>Mailing Address: 1509 Deering Street, Cleveland, Mississippi, 38732</p>
+        <p>
+          Cell Phone: <a href="" style="color:#ffd700;">(530) 220-5562</a>
+        </p>
+          Email: <a href="mailto:mmaskey@formerstudents.ucdavis.edu" style="color:#ffd700;">mmaskey@formerstudents.ucdavis.edu</a>
+        </p>
+        <p>
+          Google Scholar: <a href="https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en" style="color:#ffd700;">https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en</a>
+        </p> 
+        <p>
+          Research Gate: <a href="https://www.researchgate.net/profile/Mahesh_Maskey?ev=hdr_xprfu" style="color:#ffd700;">www.researchgate.net/profile/Mahesh_Maskey</a>
+         <p>
+          ORCID: <a href="https://orcid.org/0000-0002-2258-2932" style="color:#ffd700;">0000-0002-2258-2932</a>
+         </p>
+        <p>
+          Scopus: <a href="https://www.scopus.com/authid/detail.uri?authorId=56538356100" style="color:#ffd700;">56538356100</a>
+        </p>
+        <p>
+          LinkedIn: <a href="www.linkedin.com/in/mahesh-lal-m-9975b8360" style="color:#ffd700;">www.linkedin.com/in/mahesh-lal-m-9975b8360</a>
+        </p> 
   </div>
 </body>
 </html>
