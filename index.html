@@ -2,26 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mahesh Lal Maskey, Ph.D. | Hydrologic Sciences</title>
+  <title>Mahesh Maskey | Academic Hydrologist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#fafbfc;}
+    body {
+      background: #f7f8f9;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #222;
+    }
     .navbar {
-      background:#24354e; color:white; display:flex; padding:10px 20px;
-      align-items:center; justify-content:space-between;
+      background: #27364a;
+      color: #fff;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      height: 56px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      justify-content: space-between;
     }
-    .navbar .title { font-size:1.3em; font-weight:bold; }
+    .navbar .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
     .navbar nav a {
-      color:white; text-decoration:none; margin-left:20px; font-weight:500;
-      transition:.2s;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 32px;
+      font-weight: 500;
+      transition: color 0.15s;
     }
-    .navbar nav a:hover { color:#ffcc00; }
-    .main-content { max-width:680px; margin:40px auto 0; padding:24px; background:white; border-radius:9px; box-shadow:0 2px 8px #0001;}
-    h1 { margin-top:0; }
-    @media(max-width:600px) {
-      .main-content { margin:24px 8px; padding:14px;}
-      .navbar { flex-direction:column; align-items:flex-start; }
-      .navbar nav a { margin: 0 12px 0 0;}
+    .navbar nav a:hover {
+      color: #f7b731;
+    }
+    .main-content {
+      max-width: 700px;
+      margin: 40px auto 0 auto;
+      padding: 32px 24px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    h1, h2 {
+      margin-top: 0;
+      color: #27364a;
+    }
+    #about, #contact {
+      margin-top: 48px;
+    }
+    @media (max-width: 600px) {
+      .navbar { flex-direction: column; height: auto; padding: 12px; }
+      .navbar nav a { margin: 0 16px; }
+      .main-content { padding: 16px 5vw; }
     }
   </style>
 </head>
@@ -29,16 +62,40 @@
   <div class="navbar">
     <div class="title">Mahesh Maskey</div>
     <nav>
-      <a href="#">Home</a>
-      <!-- Later add: <a href="#">CV</a> <a href="#">Publications</a> <a href="#">Contact</a> -->
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
-  <div class="main-content">
+
+  <!-- Welcome Section -->
+  <div id="home" class="main-content">
     <h1>Welcome</h1>
-    <p>Welcome to the website of <b>Dr. Mahesh Lal Maskey</b>.</p>
+    <p>Welcome to the website of Dr. <b>Mahesh Lal Maskey</b>.</p>
     <p>Computational Research Hydrologist &amp; Academic Researcher</p>
     <p>This site is under construction. Thank you for visiting.</p>
-    <!-- Add more content as you wish! -->
+  </div>
+
+  <!-- About Me Section -->
+  <div id="about" class="main-content">
+    <h2>About Me</h2>
+    <p>
+      I am a computational hydrologist passionate about sustainable water resources, climate adaptation, and open science.<br>
+      My research integrates process-based hydrologic modeling, machine learning, and stakeholder-driven design to support resilient water management in a changing climate. <br>
+      <b>Special interests:</b> groundwater-surface water modeling, agricultural water management, reproducible research, and interdisciplinary collaboration.
+    </p>
+  </div>
+
+  <!-- Contact Section (bottom) -->
+  <div id="contact" class="main-content">
+    <h2>Contact</h2>
+    <p>
+      <b>Email:</b> <a href="mailto:your@email.com">your@email.com</a><br>
+      <b>LinkedIn:</b> <a href="https://linkedin.com/in/your-profile" target="_blank">your-profile</a>
+    </p>
+    <p>
+      You’re welcome to reach out regarding research, collaboration, or academic opportunities.
+    </p>
   </div>
 </body>
 </html>
