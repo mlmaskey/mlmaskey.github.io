@@ -6,51 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      background: #f7f8f9;
+      /* Blue gradient like the slide */
+      background: linear-gradient(135deg, #1e578b 0%, #51a1c7 100%);
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      color: #222;
+      color: #fff;
+      min-height: 100vh;
     }
     .navbar {
-      background: #27364a;
-      color: #fff;
+      background: linear-gradient(90deg, #ffd600 0%, #aaa 100%); /* yellow to gray strip */
+      color: #222;
       padding: 0 32px;
       display: flex;
       align-items: center;
       height: 56px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       justify-content: space-between;
     }
     .navbar .title {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: bold;
       letter-spacing: 1px;
+      color: #27364a;
     }
     .navbar nav a {
-      color: #fff;
+      color: #27364a;
       text-decoration: none;
       margin-left: 32px;
-      font-weight: 500;
+      font-weight: bold;
       transition: color 0.15s;
     }
     .navbar nav a:hover {
-      color: #f7b731;
+      color: #e08505;
+      text-decoration: underline;
     }
     .main-content {
-      max-width: 700px;
-      margin: 40px auto 0 auto;
-      padding: 32px 24px;
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      max-width: 800px;
+      margin: 48px auto 0 auto;
+      padding: 36px 24px;
+      background: rgba(255,255,255,0.94);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.11);
+      color: #233d54;
     }
-    h1, h2 {
-      margin-top: 0;
-      color: #27364a;
+    h1 {
+      color: #ffd600;
+      font-size: 2.6rem;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+      text-shadow: 0 3px 8px rgba(30,87,139,0.16);
     }
-    #about, #contact {
-      margin-top: 48px;
-    }
+    h2 { color: #1e578b; }
+    a { color: #e08505; font-weight: bold; }
     @media (max-width: 600px) {
       .navbar { flex-direction: column; height: auto; padding: 12px; }
       .navbar nav a { margin: 0 16px; }
@@ -68,29 +75,31 @@
     </nav>
   </div>
 
-  <!-- Welcome Section -->
   <div id="home" class="main-content">
-    <h1>Welcome</h1>
-    <p>Welcome to the website of Dr. <b>Mahesh Lal Maskey</b>.</p>
-    <p>Computational Research Hydrologist &amp; Academic Researcher</p>
-    <p>This site is under construction. Thank you for visiting.</p>
-  </div>
-
-  <!-- About Me Section -->
-  <div id="about" class="main-content">
-    <h2>About Me</h2>
+    <h1>Research Updates</h1>
+    <p style="font-size:1.25rem;">
+      Mahesh L. Maskey, Ph.D. in Hydrologic Sciences<br>
+      <span style="font-size:1.08rem; color:#1e578b;">
+        Computational Research Hydrologist & Academic Researcher
+      </span>
+    </p>
     <p>
-      I am a computational hydrologist passionate about sustainable water resources, climate adaptation, and open science.<br>
-      My research integrates process-based hydrologic modeling, machine learning, and stakeholder-driven design to support resilient water management in a changing climate. <br>
-      <b>Special interests:</b> groundwater-surface water modeling, agricultural water management, reproducible research, and interdisciplinary collaboration.
+      <b>This site is under construction. Thank you for visiting.</b>
     </p>
   </div>
 
-  <!-- Contact Section (bottom) -->
+  <div id="about" class="main-content">
+    <h2>About Me</h2>
+    <p>
+      I am a computational hydrologist specializing in sustainable water management, climate resilience, and open science.<br>
+      <b>Expertise:</b> Hydrologic modeling, machine learning, stakeholder engagement, and reproducible research.
+    </p>
+  </div>
+
   <div id="contact" class="main-content">
     <h2>Contact</h2>
     <p>
-      <b>Email:</b> <a href="mailto:your@email.com">your@email.com</a><br>
+      <b>Email:</b> <a href="mailto:mahesh.maskey@usda.gov">mahesh.maskey@usda.gov</a><br>
       <b>LinkedIn:</b> <a href="https://linkedin.com/in/your-profile" target="_blank">your-profile</a>
     </p>
     <p>
