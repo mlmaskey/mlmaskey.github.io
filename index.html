@@ -2,189 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mahesh Maskey | Academic Hydrologist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background: linear-gradient(135deg, #1e578b 0%, #51a1c7 100%);
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #222;
-      min-height: 100vh;
-    }
-    .navbar {
-      background: linear-gradient(90deg, #ffd600 0%, #aaa 100%);
-      color: #27364a;
-      padding: 0 32px;
-      display: flex;
-      align-items: center;
-      height: 56px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    .navbar .title {
-      font-size: 1.3rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .navbar nav a {
-      color: #27364a;
-      text-decoration: none;
-      margin-left: 28px;
-      font-weight: bold;
-      transition: color 0.15s;
-      font-size: 1rem;
-    }
-    .navbar nav a:hover, .navbar nav a.active {
-      color: #e08505;
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
-      margin: 48px auto 0 auto;
-      padding: 36px 20px 60px 20px;
-    }
-    section {
-      background: rgba(255,255,255,0.96);
-      border-radius: 14px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 40px;
-      padding: 32px 26px;
-    }
-    h1, h2 {
-      color: #ffd600;
-      margin-top: 0;
-      margin-bottom: 16px;
-      letter-spacing: 1px;
-    }
-    h2 { color: #1e578b; }
-    .bio {
-      font-size: 1.1rem;
-      color: #233d54;
-    }
-    .contact-box {
-      margin-top: 18px;
-      background: #f4f7fc;
-      border-radius: 8px;
-      padding: 16px;
-      color: #1e578b;
-      font-weight: 500;
-    }
-    a { color: #e08505; font-weight: bold; }
-    @media (max-width: 700px) {
-      .navbar { flex-direction: column; height: auto; padding: 14px 2vw; }
-      .navbar nav a { margin: 0 8px; }
-      .container { padding: 12px 2vw 40px 2vw; }
-      section { padding: 16px 3vw; }
-    }
-  </style>
+  <title>About Me | Mahesh Maskey</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="navbar">
     <div class="title">Mahesh Maskey</div>
     <nav>
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
   <div class="container">
-
-    <!-- HOME -->
-    <section id="home">
-      <h1>Welcome</h1>
-      <div class="bio">
-        <b>Mahesh L. Maskey, Ph.D.</b><br>
-        Computational Research Hydrologist & Academic Researcher<br>
-        <span style="color:#1e578b;">Specializing in sustainable water management, climate resilience, and open science.</span>
-      </div>
-      <p style="margin-top:18px;">
-        <b>This site is under construction. Thank you for visiting.</b>
-      </p>
-      <hr>
-      <h2 style="margin-top:22px;" id="shortbio">Short Bio</h2>
-      <p class="bio">
-        I am a computational hydrologist with expertise in hydrologic and hydroeconomic modeling, climate adaptation, and stakeholder-engaged research. I have contributed to academic and federal research teams, focusing on the intersection of process-based modeling and climate-smart agriculture.
-      </p>
-      <!-- Contact at the bottom of Home -->
-      <div class="contact-box" id="contact">
-        <b>Contact:</b><br>
-        <b>Email:</b> <a href="mailto:mahesh.maskey@usda.gov">mmaskey@formerstudents.edu</a><br>
-        <b>Google Scholar:</b> <a href="https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en" target="_blank">your-profile</a><br>
-        <b>ORCID:</b> <a href="https://orcid.org/0000-0002-2258-2932="_blank">your-profile</a><br>
-        <b>Scopus:</b> <a href="https://www.scopus.com/authid/detail.uri?authorId=56538356100" target="_blank">your-profile</a><br>
-        <b>Research Gata:</b> <a href="https://www.researchgate.net/profile/Mahesh_Maskey?ev=hdr_xprf" target="_blank">your-profile</a><br>
-        <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/mahesh-lal-m-9975b8360/" target="_blank">your-profile</a><br>
-        <b>Location:</b> United States
-      </div>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        My research focuses on process-based hydrologic modeling, machine learning in water resources, and actionable science for climate adaptation. I am passionate about transparent, reproducible research and collaborative approaches for sustainable water solutions.<br><br>
-        <b>Education:</b><br>
-        Ph.D., Hydrologic Sciences, [Your University]<br>
-        M.S., [Field], [Your University]<br>
-        B.S., [Field], [Your University]
-      </p>
-      <hr>
-      <h3>Curriculum Vitae (CV)</h3>
-      <p>
-        <a href="CV_MaheshMaskey.pdf" target="_blank">Download my full CV (PDF)</a>
-      </p>
-      <div class="contact-box">
-        <b>Contact:</b><br>
-        Email: <a href="mailto:mahesh.maskey@usda.gov">mahesh.maskey@usda.gov</a>
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research">
-      <h2>Research</h2>
-      <p>
-        - Hydrologic modeling of surface and groundwater systems<br>
-        - Climate adaptation strategies in agricultural water management<br>
-        - Integration of machine learning and stakeholder engagement<br>
-        - Open science and reproducibility in water resources research
-      </p>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li><b>Maskey, M.L.</b>, et al. (2024). Advances in Hydrologic Modeling for Climate-Smart Agriculture. <i>Journal of Hydrology</i>.</li>
-        <li><b>Maskey, M.L.</b>, et al. (2023). Stakeholder-Driven Water Resilience Tools. <i>Water Resources Research</i>.</li>
-        <!-- Add more as needed -->
-      </ul>
-    </section>
-
-    <!-- CONTACT (Separate page, optional. You can skip this if contact is at the bottom of Home/About.) -->
-    <!--
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-box">
-        <b>Email:</b> <a href="mailto:mahesh.maskey@usda.gov">mahesh.maskey@usda.gov</a><br>
-        <b>LinkedIn:</b> <a href="https://linkedin.com/in/your-profile" target="_blank">your-profile</a>
-      </div>
-    </section>
-    -->
+    <h2>About Me</h2>
+    <!-- Add bio, CV link, etc. -->
   </div>
-  <script>
-    // Simple active nav effect for single-page
-    const links = document.querySelectorAll('.navbar nav a');
-    window.addEventListener('hashchange', () => {
-      links.forEach(a => a.classList.remove('active'));
-      let match = Array.from(links).find(a => a.getAttribute('href') === window.location.hash);
-      if(match) match.classList.add('active');
-    });
-  </script>
 </body>
 </html>
