@@ -5,37 +5,85 @@
   <title>Mahesh Lal Maskey, Ph.D. in Hydrological Sciences</title>
   <style>
     body{
-    background: linear-gradient(135deg, #2288bb 0%, #116699 100%);
-    background-size: cover;     /* Stretch to fit */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Parallax effect */
-    background-position: center center;
-    /* Optionally add an overlay color for readability: */
-    /* background-color: rgba(0, 50, 100, 0.8); */
-  }
+      background: linear-gradient(135deg, #2288bb 0%, #116699 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+    }
+    .navbar {
+      background: #22334a;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .navbar .title {
+      font-weight: bold;
+      font-size: 1.3em;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .navbar nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      padding: 7px 10px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      font-weight: 500;
+    }
+    .navbar nav a.active,
+    .navbar nav a:hover {
+      background: #ffcc00;
+      color: #22334a;
+    }
+    .container {
+      background: rgba(255,255,255,0.10);
+      max-width: 650px;
+      margin: 30px auto;
+      padding: 32px;
+      border-radius: 15px;
+      box-shadow: 0 2px 12px rgba(34,51,74,0.10);
+    }
+    h2 {
+      color: #ffd700;
+      margin-top: 0;
+      letter-spacing: 1px;
+    }
   </style>
-  /* <link rel="stylesheet" href="style.css"> */
 </head>
 <body>
   <div class="navbar">
-    <div class="title">Mahesh Lal Maskey, Ph.D. in Hydrological Sciences</div>
+    <div class="title">Mahesh Maskey</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about" class="active">About Me</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Me</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
       <a href="publications.html">Publications</a>
-      <a href="presentations.html">Publications</a>
-      <a href="Contact" class="active">Contact</a>
+      <a href="affiliations.html">Affiliation</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
+
   <div class="container">
     <h2>About Me</h2>
-    <!-- Add bio, CV link, etc. -->
+    <p>
+      <!-- Add your bio and CV here -->
+      Computational Hydrologist and Researcher with a passion for water sustainability and innovation.
+    </p>
   </div>
-<div class="container">
+
+  <div class="container">
     <h2>Contact</h2>
-  
-</div>
+    <p>
+      Email: <a href="mailto:your.email@example.com" style="color:#ffd700;">your.email@example.com</a>
+    </p>
+  </div>
 </body>
 </html>
