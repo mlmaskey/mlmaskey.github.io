@@ -3,232 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <title>Mahesh Lal Maskey, Ph.D. in Hydrological Sciences</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #2288bb 0%, #116699 100%);
-      background-attachment: fixed;
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #fff;
-    }
-    .navbar {
-      background: #22334a;
-      padding: 10px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    }
-    .navbar .title {
-      font-weight: bold;
-      font-size: 1.3em;
-      color: #fff;
-      letter-spacing: 1px;
-    }
-    .navbar nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 18px;
-      padding: 7px 10px;
-      border-radius: 4px;
-      transition: background 0.2s;
-      font-weight: 500;
-    }
-    .navbar nav a.active,
-    .navbar nav a:hover {
-      background: #ffcc00;
-      color: #22334a;
-    }
-    .site-banner {
-      background: linear-gradient(90deg, #1c5b86 0%, #3cafe2 100%);
-      color: #fffbe0;
-      font-size: 1.08em;
-      font-weight: 600;
-      height: 40px;
-      overflow: hidden;
-      position: relative;
-      z-index: 999;
-      border-bottom: 2px solid #ffd700;
-      display: flex;
-      align-items: center;
-    }
-    .bottom-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-      z-index: 999;
-      border-top: 2px solid #ffd700;
-      border-bottom: none;
-    }
-    .banner-text {
-      display: inline-block;
-      white-space: nowrap;
-      animation: banner-move 16s linear infinite;
-      padding-left: 100%;
-    }
-    @keyframes banner-move {
-      0%   { transform: translateX(0%);}
-      100% { transform: translateX(-100%);}
-    }
-    .about-box {
-      background-color: rgba(255,255,255,0.10);
-      border: 2px solid #ffd700;
-      border-radius: 15px;
-      padding: 36px 40px;
-      max-width: 1100px;
-      margin: 40px auto 60px auto;
-    }
-    .about-box h2 {
-      color: #ffd700;
-      margin-top: 0;
-      letter-spacing: 1px;
-    }
-    .about-flex {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 36px;
-      margin-bottom: 24px;
-    }
-    .profile-photo {
-      width: 170px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 4px solid #fff;
-      box-shadow: 0 2px 12px rgba(34,51,74,0.14);
-      margin: 0;
-      flex-shrink: 0;
-    }
-    .about-text {
-      flex: 1;
-      color: #fff;
-      font-size: 1.07em;
-    }
-    .about-text strong {
-      font-size: 1.1em;
-      color: #ffd700;
-    }
-    .contact-info {
-      margin-top: 38px;
-      color: #fff;
-      font-size: 1.07em;
-    }
-    .contact-info h2 {
-      color: #ffd700;
-      margin-top: 0;
-      font-size: 1.25em;
-    }
-    .contact-info a {
-      color: #ffd700;
-      text-decoration: underline;
-      word-break: break-all;
-    }
-	.site-banner.bottom-banner {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: center;
-	  height: 60px; /* make this taller if you want more room */
-	  position: fixed;
-	  bottom: 0;
-	  left: 0;
-	  width: 100vw;
-	  border-top: 2px solid #ffd700;
-	  z-index: 999;
-	}
+  <link rel="stylesheet" href="maskeyStyle.css">
 
-	.banner-text {
-	  flex: 1;
-	  font-size: 1em;
-	  color: #fffbe0;
-	  padding-top: 2px;
-	}
-	.copyright-bar {
-	  text-align: center;
-	  font-size: 1em;
-	  color: #fffbe0;
-	  padding: 0 0 2px 0;
-	  background: transparent;
-	  letter-spacing: 0.5px;
-	  z-index: 1000;
-	  position: relative;
-	}
-    @media (max-width: 700px) {
-      .about-box {
-        padding: 16px 8px;
-      }
-      .about-flex {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-      }
-      .about-text {
-        text-align: center;
-      }
-      .profile-photo {
-        width: 100%;
-        max-width: 220px;
-        height: auto;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div class="navbar">
-    <div class="title">Mahesh Maskey</div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="research.html">Research Area</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="publications.html">Publications</a>
-      <a href="affiliations.html">Affiliation</a>
-      <a href="blogs.html">Personal Blogs</a>
-      <a href="people.html">People</a>
-      <a href="consulting.html">Consulting Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-  
-  <div class="site-banner">
-    <div class="banner-text">
-      Computational Hydrology and Research for the Food-Energy-Water-Environment-Climate (FEWEC) Nexus for a Sustainable Planet to Feed Hungers
-    </div>
-  </div>
-
-  <div class="about-box">
-    <h2>About Me</h2>
-    <div class="about-flex">
-      <img src="images/MaheshMaskey.jpg" alt="Mahesh Lal Maskey" class="profile-photo">
-      <div class="about-text">
-        <strong>Research Computational Hydrologist</strong>
-        <p>
-			Dr. Mahesh Lal Maskey is a Research Computational Hydrologist with expertise in hydrologic modeling, hydroeconomic analysis, and climate-resilient water management. His interdisciplinary work integrates process-based and machine learning models to improve understanding of evapotranspiration, groundwater dynamics, and agricultural sustainability under changing climate and land-use conditions. He has held research positions at USDA-ARS, UC Davis, and UC Merced, contributing to stakeholder-driven modeling frameworks, high-performance computing platforms, and applied decision-support tools used in the Mississippi Delta, California, and internationally. His doctoral research provided new insights into rainfall and streamflow variability across scales by simulating and analyzing the geometric complexity of hydrologic records using deterministic fractal-multifractal methods. His outreach and extension efforts focus on translating science into actionable insights for farmers, policymakers, and water managers.
-        </p>
-      </div>
-    </div>
-    <div class="contact-info">
-      <h2>Contact</h2>
-      Mailing Address: 1509 Deering Street, Cleveland, Mississippi, 38732<br>
-      Cell Phone: <a href="tel:5302205562">(530) 220-5562</a><br>
-      Email: <a href="mailto:mmaskey@formerstudents.ucdavis.edu">mmaskey@formerstudents.ucdavis.edu</a><br>
-      Google Scholar: <a href="https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en">https://scholar.google.com/citations?user=X24vgYAAAAAJ&hl=en</a><br>
-      Research Gate: <a href="https://www.researchgate.net/profile/Mahesh_Maskey?ev=hdr_xprfu">www.researchgate.net/profile/Mahesh_Maskey</a><br>
-      ORCID: <a href="https://orcid.org/0000-0002-2258-2932">0000-0002-2258-2932</a><br>
-      Scopus: <a href="https://www.scopus.com/authid/detail.uri?authorId=56538356100">56538356100</a><br>
-      LinkedIn: <a href="https://www.linkedin.com/in/mahesh-lal-m-9975b8360">mahesh-lal-m-9975b8360</a><br>
-    </div>
-  </div>
-  
-	<div class="site-banner bottom-banner">
-	  <div class="banner-text">
-		Sustainable Research for Sustainable Natural Resources: Natural River Flow, Hydrological Alteration, Groundwater Depletion, Climate Change
-	  </div>
-	  <div class="copyright-bar">
-		&copy; 2025 Mahesh Lal Maskey. All rights reserved.
-	  </div>
+	<div class="navbar">
+	<!--<div class="container">-->
+		<!-- <div class="title">Mahesh Maskey</div> -->
+		<nav>
+		  <a href="main.html" class="active">Home</a>
+		  <a href="about.html">About Me</a>
+		  <a href="research.html">Research Area</a>
+		  <a href="teaching.html">Teaching</a>
+		  <a href="publications.html">Publications</a>
+		  <a href="presentations.html">Presentations</a>
+		  <a href="tools.html">Tools</a>
+		  <a href="abstract.html">Abstracts</a>
+		  <a href="outreach.html">Extension, Outreach & Activities</a>
+		  <a href="service.html">Academic Service</a>
+		  <a href="affiliations.html">Affiliation</a>
+		  <a href="blogs.html">Personal Blogs</a>
+		  <a href="photo.html">Photo</a>
+		  <a href="people.html">Collaborators</a>
+		  <a href="consulting.html">Consulting Services</a>
+		  <a href="contact.html">Contact</a>
+		</nav>
 	</div>
+
+	<div class="site-banner">
+		<div class="banner-text">
+			Computational Hydrology and Research for the Food-Energy-Water-Environment-Climate (FEWEC) Nexus for a Sustainable Planet to Feed Hungers
+		</div>
+	</div>
+
+	<div class="about-bio-box">
+	 <!-- <div class="bio-block-float">
+		<div class="bio-left-col"> -->
+		<h3>Biography</h3>		
+		<img src="images/MaheshMaskey_work.jpg" alt="Mahesh Lal Maskey" class="bio-photo-float">
+		<a href="docs/maskeyCV.pdf" target="_blank" class="cv-btn-float">Curriculum Vitae</a>
+		<div class="bio-text">
+			<p>Dr. Mahesh Lal Maskey is a computational hydrologist whose career bridges quantitative fieldwork, advanced modeling, and real-world solutions to pressing water challenges. Trained in civil engineering  from Pulchowk Campus, Institute of Engineering, Tribhuwan University, in Nepal, Dr. Maskey’s early work laid the foundation for a lifelong commitment to integrating hydrologic theory with applied research. His journey led him from hydroinformatics at UNESCO-IHE, Institute for Water Education in Delft, the Netherlands to a Ph.D. in Hydrology at the University of California, Davis, where he specialized in fractal-multifractal modeling and the geometric complexity of environmental systems.</p>
+
+			<p>Across roles at UC Davis, UC Merced, and the United States Department of Agriculure Agricultural Research Service (USDA-ARS), Dr. Maskey has led and contributed to interdisciplinary teams addressing the water-climate nexus. His research spans field-based measurements, machine learning, and high-performance computing—advancing surface and groundwater modeling, climate impact assessments, and hydroeconomic frameworks that directly inform agricultural and water resource management. Notably, his leadership at the Sustainable Water Management Research Unit and National Center for Alluvial Aquifer Research (NCAAR) has produced actionable insights for conservation, irrigation scheduling, and sustainable aquifer management in the Mississippi Delta and beyond.</p>
+
+			<p>Dr. Maskey’s philosophy centers on open, collaborative science. He is committed to developing transparent, reproducible workflows and open-source modeling tools, empowering researchers, students, and stakeholders. Through mentoring, guest lectures, and technical workshops, he has supported the next generation of scientists while building field-to-model pipelines that bridge theory, computation, and stakeholder engagement.</p>
+
+			<p>Dr. Maskey’s commitment to diversity, equity, and inclusion is rooted in his own lived experience—growing up in Nepal’s Newari community and later navigating new barriers as an international scholar in the U.S. He has mentored over 50 students from a range of backgrounds, including first-generation college students, women, and international students, focusing on building technical skills while respecting each person’s identity and journey. His research aims to support fairness by addressing water challenges faced by underserved communities, such as collaborating with environmental justice groups in California and designing practical tools for resource-limited farmers in the Mississippi Delta. Dr. Maskey values honest dialogue, inclusive teaching, and community-engaged science, always striving to ensure that all voices are heard and that research connects directly with community needs. He has actively served on diversity and inclusion committees, organized equity-focused events, and plans to continue strengthening DEI efforts in all aspects of his academic and scientific work.</p>
+
+			<p>Dr. Maskey believes in teaching through real-world, hands-on experiences and open collaboration, so that every student—no matter their background—can see how science makes a difference. He’s committed to helping students grow as practical problem-solvers and ethical leaders who are ready to tackle water challenges and serve their communities.</p>
+
+			<p>Today, Dr. Maskey’s work focuses on transcending the limits of classical hydrologic modeling—integrating uncertainty analysis, machine learning, and stakeholder priorities to address complex water challenges under a changing climate. His vision is to catalyze systems that are reliable, adaptable, and equitable—serving both scientific discovery and community resilience.</p
+
+		<h3>Education</h3>
+			<p>
+				<ul>
+					<li><strong>Ph.D. in Hydrologic Sciences:</strong> University of California, Davis, 2017</li>
+					<li><strong>M.Sc. in Civil & Environmental Engineering:</strong> The University of Iowa, Iowa City, 2011</li>
+					<li><strong>M.Sc. in Hydroinformatics:</strong> UNESCO-IHE, the Netherlands, 2004</li>
+					<li><strong>B.E. in Civil Engineering:</strong> Tribhuvan University, Nepal, 1997</li>
+				</ul>
+
+		<h3>Research Experiences</h3>
+
+			<h4>Sustainable Water Management Research Management Unit (SWRMU)/National Center for Alluvial Aquifer Research (NCAAR), United States Department of Agriculture, Agricultural Research Service (USDA-ARS), Apr 2024-date</h4>		
+				Position:<strong> Research Computational Hydrologist</strong>
+				<ul>
+				  <li>Agrohydrological Modeling: Calibration and Sensitivity Analysis of Agricultural Policy/Environmental eXtender (APEX) Models</li>
+				  <li>HPC Simulation Automation for Calibration, Sensitivity, and Uncertainty Analyses for APEXgraze Model in Oklahoma Central Plains</li>
+				  <li>Conceptualization and Implementation of Integrated Hydroeconomic Modeling in the Mississippi Delta</li>
+				  <li>Statistical and Machine Learning Methods for Water Withdrawal Estimation in the Mississippi Delta</li>
+				  <li>Statistical, Machine, and Deep Learning Methods for Soil Moisture Prediction at Farm Scale within the Mississippi Delta</li>
+				</ul>
+
+			<h4>Sustainable Water Management Research Management Unit (SWRMU)/National Center for Alluvial Aquifer Research (NCAAR), United States Department of Agriculture, Agricultural Research Service (USDA-ARS), May 2022-Apr 2024</h4>		
+				<p>Position:<strong> Postdoctoral Hydrological Modeling Fellow</strong><br>
+				Funded by: <em><strong>Oak Ridge Institute for Science and Education</strong></em> for <em>Oak Ridge Affiliated Universities</em></p>	
+				<ul>
+				  <li>Hydrological model evaluation using observational and simulation data from the Lower Mississippi River Basin, Oklahoma, and other regions to assess the impacts of best management practices on runoff quantity and water quality in cropping and pasture systems.</li>
+				  <li>High-Performance Computing (HPC) platform leadership for the Sustainable Water Management Research Unit (SWRMU) through the USDA-ARS SCINet initiative, supporting large-scale, data-intensive agrohydrological modeling.</li>
+				  <li>Framework development and implementation for calibration, sensitivity, and uncertainty analysis of APEX and APEXgraze models, applied to simulate watershed processes under grazing conditions using long-term field data from the USDA-ARS Grazinglands Research Laboratory in Oklahoma.</li>
+				  <li>Hydro-economic modeling integration through interdisciplinary collaboration, combining surface and groundwater simulations with economic assessments tailored to water management challenges in the Mississippi Delta.</li>
+				</ul>
+			<h4>Water System Management Lab, School of Engineering, University of California, Merced, Dec 2019-Dec 2021</h4>
+				<p>Position:<strong> Postdoctoral Scholar</strong><br>
+				Funded by: <em><strong>National Oceanic and Atmospheric Administration (NOAA)</strong></em>, <strong><em>National Science Foundation (NSF)</em></strong>, <strong><em>Department of Water Resources (DWR)</em></strong>, and <strong><em>California Energy Commission (CEC)</em></strong></p>			
+				<ul>
+				  <li>Pre- and post-processing systems upgrade for the statewide hydro-economic model CALVIN.</li>
+				  <li>Conceptual framework for evaluating hydropower operation impacts on managed aquifer recharge for the NOAA-funded South Carolina University project.</li>
+				  <li>Statewide Innovative Food-Energy-Water Systems research framework integrating hydrology, climate, and economics for the NSF-funded collaboration with Oregon State University, University of Hawaii, University of California Santa Barbara, University of California Los Angeles, and the Department of Water Resources.</li>
+				  <li>Climate change impact synthesis for California’s San Joaquin Valley in partnership with the Union of Concerned Scientists.</li>
+				  <li>Bias correction and model enhancement framework for the PYWR model to assess hydrological alterations under climate scenarios from Global Circulation Models (GCMs) for the CEC-funded project.</li>
+				</ul>			
+			<h4>Department of Land, Air and Water Resources, University of California, Davis and Merced, Jan 2018-Jul 2019</h4>	
+				<p>Position:<strong> Postdoctoral Scholar</strong><br>
+				Funded by: <em><strong>California Pistachio Research Board</strong></em>, <strong><em>California Division of Agriculture and Natural Resources (UCANR)</em></strong>, <strong><em> USDA’s Agricultural Marketing Service</em></strong>, <strong><em>USDA Forest Service</em></strong>, and <em><strong>California Department of Food and Agriculture Specialty Crop Block Grant</strong></em></p>			
+				<ul>
+				  <li>Bio-meteorological data processing and automation for evapotranspiration estimation, integrating ground-based measurements with remotely sensed observations.</li>
+				  <li>Field-scale micro-meteorological sensor deployment and maintenance, stem water potential measurement, and trunk dendrometer data analysis for plant physiological response assessment.</li>
+				  <li>Bioclimatic index literature review and climate adaptation research proposal development, including simulation of pest dynamics in nut-tree systems under future climate scenarios using multiple Global Circulation Models (GCMs).</li>
+				  <li>Proposal development for USDA-NIFA and 2018-19 Seed Grants for International Activities.
+				  <li>Field-scale strawberry yield forecasting using machine learning models that incorporate weather, soil, and management variables.</li>
+				</ul>			
+			<h4>Department of Land, Air and Water Resources, University of California, Davis and Merced, Jan 2017-Dec 2017</h4>	
+				<p>Position:<strong>Graduate Student Researcher</strong><br>
+				Funded by: <em><strong>University of California Office of the President</strong></em>, <strong><em>California Division of Agriculture and Natural Resources (UCANR)</em></strong>, and <strong><em> Carbon Neutrality Initiative</em></strong></p>	
+				<ul>
+				  <li>SWEEP (State Water Efficiency and Enhancement Program) project proposal review, literature synthesis on climate change impacts, and evaluation of evapotranspiration and irrigation scheduling for alfalfa at UC Davis.</li>
+				  <li>User-friendly software tool development for visualization of flux data from Eddy Covariance and Surface Renewal systems.</li>
+				  <li>Stem water potential data collection and analysis at Safari’s vineyards for assessment of vine water status.</li>
+				  <li>Climate vulnerability and adaptation strategy review specific to California’s agricultural sector.</li>
+				</ul>				
+			<h4>Hyrologic Sciences Graduate Group, Department of Land, Air and Water Resources, University of California, Davis, Sep 2012-Dec 2017</h4> 
+				<p>Position: <strong>Graduate Student Researcher</strong><br>
+				Funded by: <em><strong>University of California, Davis: Henry Jastro Awards</strong></em>
+				<ul>
+					<li>MATLAB code optimization and upgrade for multiple Fractal-Multifractal (FM) model variants to enhance computational performance and scalability.</li>
+					<li>Novel FM model development and testing for characterization of hydrological and climatic variables (streamflow, precipitation, temperature) across temporal and spatial scales.</li>
+					<li>Evaluation framework design for model accuracy and robustness, complemented by comprehensive literature review on fractal geometry, mathematical modeling, and hydrological applications.</li>
+					<li>Theoretical framework formulation for geometrical representations of hydrological processes using FM methods, forming the basis of doctoral dissertation research.</li>					
+				  <li>Postdoctoral fellowship proposal development for National Science Foundation (NSF), National Aeronautics and Space Administration (NASA), and President’s Postdoctoral Fellowship Program (PPFP) UC Davis.
+					<li><strong>Doctoral Dissertation:</strong> <em>Study of Hydrological Processes using a  Fractal Geometric Method</em></li>
+				</ul>
+			<h4>IIHR-Hydroscience and Engineering, College of Engineering, The University of Iowa, Iowa City, Aug 2010-Dec 20111</h4> 
+				<p>Position: <strong>Graduate Research Assistant</strong><br>
+				Funded by: <em><strong>Iowa Flood Center</strong></em>
+				<ul>
+				  <li>Digitization of small-scale stream networks throughout Iowa for hydrological mapping and flood risk assessment at the Iowa Flood Center.</li>
+				  <li>Application and evaluation of the Gridded Surface Hydrology Analysis (GSHA) model to improve streamflow estimation and watershed-scale hydrologic simulation.</li>
+				</ul>
+			<h4>UNESCO-IHE the Institute for Water Education, Delft, the Netherlands, Oct 2002 – Feb 2004</h4> 
+				<p>Position: <strong>Postgraduate Participant</strong><br>
+				Funded by: <em><strong>Netherlands Fellowship Program</strong>, and <strong>FLOOD Site</strong></em>
+				<ul>
+				  <li>Rainfall-runoff modeling enhancement with committee machine algorithms under the supervision of Professor Dimitri P. Solomatine for a Master of Engineering individual research project.</li>
+				  <li>Data-driven hydrological modeling using instance-based learning techniques within the Java-based Waikato Environment for Knowledge Analysis (WEKA) platform to improve predictive accuracy and generalization in watershed-scale simulations.</li>
+				<li><strong>Master's Dissertation:</strong> <em>Instance- based Learning in Hydrological Modelling</em></li>
+				</ul>
+				
+		<h3>Research Interests</h3>
+			<ul>
+				<li>Computational Hydroscience and Engineering,</li>
+				<li>Fractal Geometry and Fractals in Hydrology,</li>
+				<li>Physical and Stochastic Hydrology (surface and subsurface),</li> 
+				<li>Hydroinformatics,</li> 
+				<li>Climate Change Impacts,</li> 
+				<li>Modeling Evapotranspiration,</li> 
+				<li>High-Performance Computing (HPC) for Hydrological Simulations,</li>
+				<li>Remote Sensing,</li> 
+				<li>Agricultural Water Management,</li> 
+				<li>Crop Modeling,</li> 
+				<li>Hydroeconomic Modeling,</li> 
+				<li>Geospatial and Statistical Analysis,</li>
+				<li>Complexity and Scaling in Hydrology, and </li>  
+				<li>Machine Learning and Data Mining</li>
+			</ul>
+		<h3>Teaching Experiences</h3>
+			<ul>
+				<li><strong>USDA-ARS, SCINet Geospatial Working Group</strong>, Nov 2025<br>
+				Webinar Lecture on <em>A Tool to Extract Actual Evapotranspiration from the USGS MODIS Data Portal</em></li>
+				<li><strong>University of California, Merced</strong>, May 2021<br>
+				Guest Lecture for Undergraduate Course "<strong>Spatial Analysis and Modeling (ENGR 180)</strong>" on <em>Visualizing Climate Data in Space</em></li>
+				<li><strong>California State University, Chico</strong>, Apr 2021<br>
+				Data Carpentry Workshop Instructor for <em> The Analysis of Social Science Data using R</em></li>	
+				<li><strong>University of California, Davis</strong>, Apr 2019
+				Instrutor for R-Spatial Map Time on <em>Extracting NDVI Time Series Information</em></li>
+				<li><strong>University of California, Davis</strong>, Mar 2018<br>
+				Guest Lecture for Graduate Course "<strong>Modeling of Hydrological Process</strong>" on <em>The Fractal-Multifractal Tool for Hydrological Modeling</em></li>
+				<li><strong>University of California, Davis</strong>, Sep 2012 - Dec 2017<br>
+				Teaching Assistant to grade and assist graduate and undergraduate students with homework assignments and exams, to prepare and revise question sets, rector the mid and final terms, and lead and guide the class projects <br>
+				<ul>
+					<li>Undergraduate Course: <em>Physical Hydrology</em> and </li>
+					<li><em>Systems Hydrology</em> and </li>
+					<li>Graaduate Course: <em>Principles of Hydrologic Modeling, HEC Software </em></li>
+				</ul>
+			</ul>
+
+		<h3>Teaching Interests</h3>
+			<ul>
+				<li>Physical (Computational) and Stochastic (Surface and Sub-surface) Hydrology,</li> 
+				<li>Hydroinformatics,</li> 
+				<li>Numerical Methods in Water Resources,</li> 
+				<li>Data Mining,</li>
+				<li>Geostatistics,</li>
+				<li>Agricultural Water Management,</li> 
+				<li>Climate Change Science,</li> 
+				<li>Evapotranspiration Modeling,</li> 
+			</ul>
+			
+		<h3>Honors and Awards</h3>
+			<ul>
+				<li><strong>Early Career Scientist’s Travel Support:</strong>  European Geosciences Union General Assembly 2017, 2018</li>
+				<li><strong>Graduate Student Travel Award:</strong> American Geophysical Union Meeting Travel 2016</li>
+				<li><strong>Henry A. Jastro Graduate Research Scholarship Award:</strong> Stipend for Academic Years 2014-2017</li>
+				<li><strong>European Union Project Contract:</strong> Dissertation Grant for the Academic Years 2003-2004</li>
+				<li><strong>Netherlands Fellowship Program (NFP):</strong> Master of Science in hydroinformatics for the Academic Years 2002-2003</li>
+			</ul>
+			
+		<h3>Hobby</h3>
+			<ul>
+				<li><strong>Writing:</strong> Poems, Scientific Blogs</li>
+				<li><strong>Cooking:</strong> Nepalese and Indian Cuisine</li>
+				<li><strong>Playing:</strong> Pickle ball, Tennis, and Ping Pong</li>
+				<li><strong>Spiritual:</strong> Worshiping, Chanting and Praying</li>
+			</ul>
+	</div>
+</div>
+
+	<div class="site-banner bottom-banner">
+<div class="banner-text">
+  Sustainable Research for Sustainable Natural Resources: Natural River Flow, Hydrological Alteration, Groundwater Depletion, Climate Change
+</div>
+<div class="copyright-bar", color=black>
+  &copy; 2025 Mahesh Lal Maskey. All rights reserved.
+</div>
 </body>
 </html>
